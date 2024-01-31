@@ -72,9 +72,17 @@
               "target": "Package",
               "version": "[7.0.15, )"
             },
+            "OneSignal.CSharp.SDK": {
+              "target": "Package",
+              "version": "[0.10.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "mercadopago-sdk": {
+              "target": "Package",
+              "version": "[2.3.5, )"
             }
           },
           "imports": [

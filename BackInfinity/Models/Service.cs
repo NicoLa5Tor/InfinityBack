@@ -7,7 +7,7 @@ public partial class Service
 {
     public int Id { get; set; }
 
-    public TimeSpan HorMin { get; set; }
+    public TimeSpan? HorMin { get; set; }
 
     public string? NameService { get; set; }
 
@@ -22,4 +22,6 @@ public partial class Service
     public string? Image3 { get; set; }
 
     public int Price { get; set; }
+
+    public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 }

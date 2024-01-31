@@ -17,7 +17,9 @@ builder.Services.AddDbContext<DbinfinityContext>(op =>
 op.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
 builder.Services.AddControllers();
 
+builder.Services.AddScoped<IAppisService, AppisService>();  
 builder.Services.AddScoped<IServicesService, ServicesService>();
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 
 //declare Automapper//
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
