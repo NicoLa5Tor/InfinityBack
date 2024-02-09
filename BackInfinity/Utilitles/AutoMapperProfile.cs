@@ -51,6 +51,9 @@ namespace BackInfinity.Utilitles
                 origin => origin.MapFrom(org =>
                 DateTime.ParseExact(org.HorAppoint, "dd/MM/yyyy H:mm", CultureInfo.InvariantCulture)));
             #endregion
+            #region Access
+            CreateMap<Access, AccessDTO>().ReverseMap();
+            #endregion
 
         }
 

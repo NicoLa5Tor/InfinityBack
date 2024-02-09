@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Security.Cryptography.Xml;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BackInfinity.Controllers
 {
@@ -22,6 +23,7 @@ namespace BackInfinity.Controllers
             this._mapper = map;
 
         }
+        
         [HttpGet("Get/{id}")]
         public async Task<IActionResult> Get(int id)
         {
@@ -35,7 +37,8 @@ namespace BackInfinity.Controllers
             catch (Exception ex) { throw ex; }
 
         }
-        [HttpPost("Add")]
+        [Authorize]
+        [HttpPost("Add")] 
         public async Task<IActionResult> AddAppointment([FromBody] AppointmentDTO model)
         {
             try
@@ -52,6 +55,7 @@ namespace BackInfinity.Controllers
             }
             catch (Exception ex) { throw ex; }
         }
+        
         [HttpGet("List")]
         public async Task<IActionResult> GetList()
         {
@@ -65,6 +69,7 @@ namespace BackInfinity.Controllers
             catch (Exception ex) { throw ex; }
 
         }
+        [Authorize]
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> Delete(int id)
         {

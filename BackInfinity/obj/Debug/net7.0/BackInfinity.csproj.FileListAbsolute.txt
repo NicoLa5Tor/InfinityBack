@@ -155,6 +155,5 @@ C:\Users\Nicolas Torres\OneDrive\Escritorio\Back\BackInfinity\BackInfinity\obj\D
 C:\Users\Nicolas Torres\OneDrive\Escritorio\Back\BackInfinity\BackInfinity\obj\Debug\net7.0\BackInfinity.genruntimeconfig.cache
 C:\Users\Nicolas Torres\OneDrive\Escritorio\Back\BackInfinity\BackInfinity\obj\Debug\net7.0\ref\BackInfinity.dll
 C:\Users\Nicolas Torres\OneDrive\Escritorio\Back\BackInfinity\BackInfinity\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Users\Nicolas Torres\OneDrive\Escritorio\Back\BackInfinity\BackInfinity\bin\Debug\net7.0\OneSignal.CSharp.SDK.dll
-C:\Users\Nicolas Torres\OneDrive\Escritorio\Back\BackInfinity\BackInfinity\bin\Debug\net7.0\RestSharp.dll
 C:\Users\Nicolas Torres\OneDrive\Escritorio\Back\BackInfinity\BackInfinity\bin\Debug\net7.0\MercadoPago.dll
+C:\Users\Nicolas Torres\OneDrive\Escritorio\Back\BackInfinity\BackInfinity\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

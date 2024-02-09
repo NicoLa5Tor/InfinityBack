@@ -29,5 +29,19 @@ namespace BackInfinity.Controllers
                 
             }catch (Exception ex) { throw ex; }
         }
+        [HttpGet("/GetPreference/{id}")]
+        public async Task<IActionResult> MercadoPagoGetPreference(string id)
+        {
+            try
+            {
+                var response = await appisService.GetPreference(id);
+                if(response is null) return NotFound();
+                return Ok(response);
+
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
